@@ -1,0 +1,34 @@
+2022-06-17 10:30:50.935 -04:00 [INF] Now listening on: https://localhost:7260
+2022-06-17 10:30:50.999 -04:00 [INF] Now listening on: http://localhost:5298
+2022-06-17 10:30:51.002 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-17 10:30:51.002 -04:00 [INF] Hosting environment: Development
+2022-06-17 10:30:51.002 -04:00 [INF] Content root path: /Users/nicholasguinther/RiderProjects/HotelListing/HotelListing.API/
+2022-06-17 10:39:07.926 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Entity type 'Country' is defined with a single key property, but 0 values were passed to the 'Find' method.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues, IReadOnlyList`1& keyProperties)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindAsync(Object[] keyValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.FindAsync(Object[] keyValues)
+   at HotelListing.API.Repository.GenericRepository`1.GetAsync(Nullable`1 id) in /Users/nicholasguinther/RiderProjects/HotelListing/HotelListing.API/Repository/GenericRepository.cs:line 23
+   at HotelListing.API.Controllers.CountriesController.PutCountry(Int32 id, UpdateCountryDto updateCountryDto) in /Users/nicholasguinther/RiderProjects/HotelListing/HotelListing.API/Controllers/CountriesController.cs:line 65
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-17 10:40:59.639 -04:00 [INF] Application is shutting down...
+2022-06-17 10:41:06.354 -04:00 [INF] Now listening on: https://localhost:7260
+2022-06-17 10:41:06.409 -04:00 [INF] Now listening on: http://localhost:5298
+2022-06-17 10:41:06.412 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-17 10:41:06.413 -04:00 [INF] Hosting environment: Development
+2022-06-17 10:41:06.413 -04:00 [INF] Content root path: /Users/nicholasguinther/RiderProjects/HotelListing/HotelListing.API/
+2022-06-17 11:48:23.487 -04:00 [INF] Application is shutting down...

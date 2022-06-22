@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HotelListing.API.Data;
 using HotelListing.API.Models.Country;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HotelListing.API.Controllers
 {
@@ -35,7 +36,7 @@ namespace HotelListing.API.Controllers
             return Ok(records);
         }
 
-        // GET: api/Country/5
+        // GET: api/Countries/5
         [HttpGet("{id}")]
         public async Task<ActionResult<CountryDto>> GetCountry(int id)
         {
@@ -51,8 +52,9 @@ namespace HotelListing.API.Controllers
             return record;
         }
 
-        // PUT: api/Country/5
+        // PUT: api/Countries/5
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> PutCountry(int id, UpdateCountryDto updateCountryDto)
         {
             if (id != updateCountryDto.Id)
@@ -90,8 +92,9 @@ namespace HotelListing.API.Controllers
             return NoContent();
         }
 
-        // POST: api/Country
+        // POST: api/Countries
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountryDto)
         {
 
@@ -108,8 +111,9 @@ namespace HotelListing.API.Controllers
             return CreatedAtAction("GetCountry", new { id = country.Id }, country);
         }
 
-        // DELETE: api/Country/5
+        // DELETE: api/Countries/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> DeleteCountry(int id)
         {
 

@@ -1,0 +1,18 @@
+2022-06-22 09:37:32.655 -04:00 [INF] Now listening on: https://localhost:7260
+2022-06-22 09:37:32.719 -04:00 [INF] Now listening on: http://localhost:5298
+2022-06-22 09:37:32.722 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-22 09:37:32.722 -04:00 [INF] Hosting environment: Development
+2022-06-22 09:37:32.722 -04:00 [INF] Content root path: /Users/nicholasguinther/RiderProjects/HotelListing/HotelListing.API/
+2022-06-22 09:49:49.479 -04:00 [INF] Application is shutting down...
+2022-06-22 10:49:32.839 -04:00 [INF] Now listening on: https://localhost:7260
+2022-06-22 10:49:32.938 -04:00 [INF] Now listening on: http://localhost:5298
+2022-06-22 10:49:32.943 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-22 10:49:32.944 -04:00 [INF] Hosting environment: Development
+2022-06-22 10:49:32.944 -04:00 [INF] Content root path: /Users/nicholasguinther/RiderProjects/HotelListing/HotelListing.API/
+2022-06-22 10:57:24.530 -04:00 [INF] Application is shutting down...
+2022-06-22 13:24:23.865 -04:00 [INF] Now listening on: https://localhost:7260
+2022-06-22 13:24:23.919 -04:00 [INF] Now listening on: http://localhost:5298
+2022-06-22 13:24:23.922 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-22 13:24:23.922 -04:00 [INF] Hosting environment: Development
+2022-06-22 13:24:23.922 -04:00 [INF] Content root path: /Users/nicholasguinther/RiderProjects/HotelListing/HotelListing.API/
+2022-06-22 13:26:32.676 -04:00 [INF] Application is shutting down...

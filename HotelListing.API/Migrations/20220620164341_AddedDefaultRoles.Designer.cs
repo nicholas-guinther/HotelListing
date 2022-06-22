@@ -3,6 +3,7 @@ using System;
 using HotelListing.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace HotelListing.API.Migrations
 {
     [DbContext(typeof(HotelListingDbContext))]
-    partial class HotelListingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220620164341_AddedDefaultRoles")]
+    partial class AddedDefaultRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -194,44 +196,6 @@ namespace HotelListing.API.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "1",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "dbcbf046-a7a2-4f8f-85cc-01496e9df6c4",
-                            Email = "admin@email.com",
-                            EmailConfirmed = false,
-                            FirstName = "Admin",
-                            LastName = "User",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "ADMIN@EMAIL.COM",
-                            NormalizedUserName = "ADMIN@EMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEB7ws+8+MGPvuIZhbNw9hCAowyzvJsB3Seml2GVplkpqewrbLOu4rtOcUNnB4i/fqg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "11771f83-ed6b-492b-aa89-0175d3396429",
-                            TwoFactorEnabled = false,
-                            UserName = "admin@email.com"
-                        },
-                        new
-                        {
-                            Id = "2",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "cc8c771b-aa74-4489-b4b4-b50e572686ed",
-                            Email = "standard@email.com",
-                            EmailConfirmed = false,
-                            FirstName = "Standard",
-                            LastName = "User",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "STANDARD@EMAIL.COM",
-                            NormalizedUserName = "STANDARD@EMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHScEdZXhZVXOOA3CfKIB4rO6fE5m+sJblnbI7gXLFV9Eu5rR/aNZho6CxhMJRDRvw==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "d94c03b5-9561-4ff0-b6f7-14aa9b33b68b",
-                            TwoFactorEnabled = false,
-                            UserName = "standard@email.com"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -262,15 +226,15 @@ namespace HotelListing.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "1",
-                            ConcurrencyStamp = "85a37c08-41f8-40e0-888f-43882508891a",
+                            Id = "38ed1c32-c6e0-472b-b79c-f3cc9265b745",
+                            ConcurrencyStamp = "1b4d843a-a7d5-4e57-ac3c-d96ab4d9e68d",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
-                            Id = "2",
-                            ConcurrencyStamp = "1341ee91-ce5a-4cf8-83bc-b5adf9c56c8a",
+                            Id = "f97f653f-a4b2-436e-a4f1-f44cdc167c48",
+                            ConcurrencyStamp = "65ee6698-2c47-48f6-b889-8d6240433d9a",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -361,18 +325,6 @@ namespace HotelListing.API.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "1",
-                            RoleId = "1"
-                        },
-                        new
-                        {
-                            UserId = "2",
-                            RoleId = "2"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>

@@ -1,0 +1,14 @@
+2022-06-20 19:36:51.232 -04:00 [INF] Now listening on: https://localhost:7260
+2022-06-20 19:36:51.302 -04:00 [INF] Now listening on: http://localhost:5298
+2022-06-20 19:36:51.305 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-20 19:36:51.305 -04:00 [INF] Hosting environment: Development
+2022-06-20 19:36:51.305 -04:00 [INF] Content root path: /Users/nicholasguinther/RiderProjects/HotelListing/HotelListing.API/
+2022-06-20 19:38:05.639 -04:00 [WRN] User validation failed: DuplicateUserName.
+2022-06-20 19:48:53.195 -04:00 [INF] Application is shutting down...
+2022-06-20 20:04:12.433 -04:00 [INF] Now listening on: https://localhost:7260
+2022-06-20 20:04:12.496 -04:00 [INF] Now listening on: http://localhost:5298
+2022-06-20 20:04:12.500 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-20 20:04:12.501 -04:00 [INF] Hosting environment: Development
+2022-06-20 20:04:12.501 -04:00 [INF] Content root path: /Users/nicholasguinther/RiderProjects/HotelListing/HotelListing.API/
+2022-06-20 20:05:17.357 -04:00 [WRN] Invalid password for user.
+2022-06-20 20:05:53.379 -04:00 [INF] Application is shutting down...
